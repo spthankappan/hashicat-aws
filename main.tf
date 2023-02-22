@@ -9,6 +9,7 @@ terraform {
 
 provider "aws" {
   region  = var.region
+  prefix  = var.prefix
 }
 
 resource "aws_vpc" "hashicat" {
